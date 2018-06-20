@@ -1,0 +1,286 @@
+
+/* general elements */
+
+html {
+  font-size: 18px;
+  font-family: helvetica;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+.container { /* container only here to center the elements. It wraps every section */
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* hero image section */
+
+#herobg {
+  background-image: url("./glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+  background-color: cadetblue;
+  color: white;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-grow: 1;
+}
+
+header #logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header #logo img {
+  margin-left: 2rem;
+  height: 1.5rem;
+}
+
+header #logo h1 {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.mobile {
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav span {
+  padding-right: 2rem;
+}
+
+#flex-banner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#banner {
+  background-color: white;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: 7rem;
+}
+
+#banner h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+}
+
+/* main content elements */
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+}
+
+.service img {
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
+
+.service img.ruler-icon {
+  width: 5rem;
+}
+
+.service img.truck-icon {
+  width: 5rem;
+}
+
+/* text section */
+
+.info {
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 4rem;
+}
+
+.info p {
+    padding: 1rem 0;
+}
+
+.title {
+    background-color: cadetblue;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+    color: white;
+    max-width: 10rem;
+}
+
+/* footer section */
+
+footer {
+    background-color: azure;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo-black img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+
+}
+
+/* media queries */
+
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+
+  .container { /* container only here to center the elements. It wraps every section */
+    max-width: 100%;
+  }
+
+  #herobg {
+    height: 22rem;
+    background-position: 35%;
+  }
+
+  header {
+      top: 0rem;
+  }
+
+  #banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  #banner h2 {
+    font-size: 1.33rem;
+    line-height: 1.2;
+    font-weight: bold;
+    padding: 0.75rem 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 470px) and (orientation: portrait) {
+
+  .container { /* container only here to center the elements. It wraps every section */
+    max-width: 470px;
+  }
+
+  .mobile {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #herobg {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #banner {
+  margin-top: 9rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  }
+
+  #banner h2 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
+
+  .product {
+    flex-wrap: wrap;
+    margin-top: 0rem;
+  }
+
+  .product .container{
+    flex-wrap: wrap;
+  }
+
+  .info {
+      width: 100%;
+      margin: 0rem;
+  }
+
+  .service {
+    width: 5rem;
+    height: 4rem;
+    margin-bottom: 1.54rem;
+  }
+
+  .service h3 {
+    font-size: 0.77rem;
+  }
+
+  .title {
+      max-width: 100%;
+  }
+
+  .title h3 {
+    text-align: center;
+  }
+
+  .info p {
+      padding: 1rem 0 4rem 0;
+      font-size: 0.77rem;
+  }
+
+  #copyright {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+}
